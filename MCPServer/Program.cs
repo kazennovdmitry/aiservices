@@ -1,9 +1,27 @@
-﻿namespace MCPServer;
+﻿using MCPServer.Tools;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+
+namespace MCPServer;
 
 class Program
 {
-    static void Main(string[] args)
+    static async Task<int> Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var builder = Host.CreateApplicationBuilder(args);
+
+        builder.Services.AddMcpServer()
+            .WithStdioServerTransport()
+            .WithTools<FileSystemTools>();
+
+        builder.Logging.AddConsole(options =>
+        {
+            options.LogToStandardErrorThreshold = LogLevel.Trace;
+        });
+
+        var app = builder.Build();
+        await app.RunAsync();
+        return 0;
     }
 }
