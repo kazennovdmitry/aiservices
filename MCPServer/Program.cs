@@ -19,6 +19,7 @@ class Program
         {
             options.LogToStandardErrorThreshold = LogLevel.Trace;
         });
+        builder.Logging.SetMinimumLevel(LogLevel.Trace);
 
         var app = builder.Build();
         await app.RunAsync();
