@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLogic", "CoreLogic\Core
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{373C0323-D0A8-4698-97D4-826B4AE2D4EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPServer", "MCPServer\MCPServer.csproj", "{5CE2434F-9BF0-4903-B1F7-1BD3B6314415}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPStdioServer", "MCPStdioServer\MCPStdioServer.csproj", "{5CE2434F-9BF0-4903-B1F7-1BD3B6314415}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
