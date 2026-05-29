@@ -3,7 +3,7 @@ using ModelContextProtocol.Server;
 using System.ComponentModel;
 using Microsoft.Extensions.Logging;
 
-namespace MCPServer.Tools;
+namespace MCPStdioServer.Tools;
 
 [McpServerToolType]
 public sealed class FileSystemTools

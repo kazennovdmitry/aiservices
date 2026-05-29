@@ -1,9 +1,9 @@
-﻿using MCPServer.Tools;
+﻿using MCPStdioServer.Tools;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace MCPServer;
+namespace MCPStdioServer;
 
 class Program
 {
