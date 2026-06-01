@@ -17,4 +17,9 @@
       <ProjectReference Include="../CoreLogic/CoreLogic.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Prompts\" />
+      <Folder Include="Resources\" />
+    </ItemGroup>
+
 </Project>
